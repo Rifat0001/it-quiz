@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="bg-white font-common">
+    <!-- Header/Navbar section start -->
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <a class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white" href="index.html">
+                Home
+            </a>
+        </nav>
+    </header>
+    <!-- Header/Navbar section end -->
+
+    <!-- Question start -->
+
+    <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto px-16 py-9">
+        <div>
+            <h3>Question-1: What is the difference between map(), filter(), foreach() and find()?</h3>
+            <p>Answer:</p>
+            <ul>
+                <li>The map() method loops every element of an array and match with required condition and finally
+                    return a new array. </li>
+                <li>filter() method check any condition from an array and return a new array after checking all matching
+                    conditions. </li>
+                <li>forEach() method is used to execute the same code on every element in an array but it does not
+                    change the array or array like objects and it returns undefined.</li>
+                <li>find() method check any condition from an array like filter but it returns the first element which
+                    match with the condition.</li>
+            </ul>
+        </div><br>
+        <div>
+            <h3>Question-2: What is the difference between local storage, session storage and cookies?</h3>
+            <p>Answer:</p>
+            <ul>
+                <li>Local storage store the most recent data and it is not deleted when the browser is closed. </li>
+                <li>Session storage store data but only for current session, it is deleted after closing the browser.
+                </li>
+                <li>Cookies store data on client side in a text file.</li>
+            </ul>
+        </div><br>
+        <div>
+            <h3>Question-3: What is Event Loop and its function?</h3>
+            <p>Answer:</p>
+            <ul>
+                <li>The Event Loop is a programming design pattern which waits for and dispatches events in a program.
+                    It is just a guardian who keeps a good communication with Call Stack and Callback Queue. The
+                    functions of Event Loop is given below:</li>
+                <li>1. Code that waits for and dispatches events</li>
+                <li>2. Monitors the call stack and callback queue</li>
+                <li>3. Handles the events for its environment</li>
+                <li>4. Breaks down asynchronous code into ticks</li>
+            </ul>
+        </div><br>
+        <div>
+            <h3>Question-4: What is the function of quizTimer()?</h3>
+            <p>Answer: quizTimer() function counts the time of the quiz. When it counts to 60, the text color transform
+                from green to red which gives a warning message of the time. If count > 60 is truthy, it checks whether
+                the count %2 === 0 or not and according to the condition it adds or remove the text-red-300 and
+                text-red-700 class respectively.</p>
+        </div><br>
+        <div>
+            <h3>Question-5: What is the function of chooseQuiz()?</h3>
+            <p>Answer: chooseQuiz() function takes two parameters as index, givenAns. Then it uses the find() method to
+                check whether the answers are exists or not. Then finally it passes the answer to the displayAnswers()
+                function.</p>
+        </div>
+    </section>
+
+    <!-- Question End -->
+
+
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+        Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
+</body>
+
+</html>
